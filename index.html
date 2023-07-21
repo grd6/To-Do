@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="title"><span>Todo List</span></div>
+      <hr />
+      <div class="s_nuevaTarea"><span>Nueva Tarea</span></div>
+      <input type="text" name="imp_task" id="imp_task" />
+      <button id="btA">Agregar</button>
+      <div class="total_container">
+        <div class="total">
+          <div><span id="total"></span></div>
+          <div><span id="realizadas"></span></div>
+        </div>
+        <div class="container_showTask">
+          <div class="showTask2">
+            <table>
+              <thead>
+                <th>id</th>
+                <th>Tarea</th>
+                <th>Status</th>
+                <th>Elminiar</th>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
