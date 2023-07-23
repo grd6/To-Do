@@ -75,13 +75,13 @@ const mostrarHtml = () => {
   let totalRealizados = [];
   tareasJSON.forEach((tareasJSON) => {
     check = tareasJSON.realizado
-      ? `<li><input type="checkbox" onclick="status(${tareasJSON.id})">${tareasJSON.tarea}</li>`
-      : `<li><input type="checkbox" checked onclick="status(${tareasJSON.id})">${tareasJSON.tarea}</li>`;
+      ? `<li>${tareasJSON.tarea}</li><td><input type="checkbox" checked onclick="status(${tareasJSON.id})"></td>`
+      : `<li>${tareasJSON.tarea}</li><td><input type="checkbox"  onclick="status(${tareasJSON.id})"></td>`;
     html += `
       <tr>
       <td>${tareasJSON.id}</td>
-       <td>${tareasJSON.tarea}</td>
-       <td><input type="checkbox" onclick="status(${tareasJSON.id})" ></td>
+      <td>${check}</td>
+      
        <td><button id="bt2"  onclick="borrarTarea(${tareasJSON.id})">X</button></td>
       </tr>
       
